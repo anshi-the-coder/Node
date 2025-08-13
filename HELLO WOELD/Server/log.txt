@@ -1,10 +1,5 @@
-1754925155992: /New Req received
-1754925227574: /about New Req received
-1754925286593: /about?myname=anshika New Req received
-1754926040603: /aboutNew Req received
-1754926121497: /aboutNew Req received
-1754926260834: /aboutNew Req received
-1754926308649: /about?myname=anshikaNew Req received
-1754926434497: /about?myname=anshikaNew Req received
-1754926447476: /about?myname=anshiNew Req received
-1754926677986: /search?=javascript+tic+tac+toeNew Req received
+1755103303766:GET /New Req received
+1755103357271:GET /aboutNew Req received
+1755103703159:GET /signupNew Req received
+1755103725654:GET /signupNew Req received
+1755103803165:GET /signupNew Req received
