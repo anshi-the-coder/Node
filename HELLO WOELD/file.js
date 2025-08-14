@@ -1,7 +1,7 @@
-const fs = require("fs");
-const os = require("os");
+// const fs = require("fs");
+// const os = require("os");
 
-console.log(os.cpus().length);
+// console.log(os.cpus().length);
 //Sync..Blocking
 // fs.writeFileSync('./test.txt','Hello World');    // return something
 
