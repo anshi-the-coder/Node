@@ -13,6 +13,6 @@ app.use(express.urlencoded({ extended: false })); // Middleware to parse JSON
 
 app.use(logReqRes('log.txt'));
 
-app.use('/api/user', userRouter);
+app.use('/api/users', userRouter);
 
 app.listen(PORT, () => console.log(`Server Started at PORT: ${PORT}`));
