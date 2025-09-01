@@ -18,7 +18,7 @@ async function handleUserSignup(req, res) {
       password,
     });
 
-    return res.redirect("/login"); // ✅ signup ke baad login page
+    return res.redirect("/user/login"); // ✅ signup ke baad login page
   } catch (err) {
     console.error("Signup error:", err);
     return res.status(500).send("Something went wrong");
@@ -36,9 +36,10 @@ async function handleUserLogin(req, res) {
       });
     }
 
-    const sessionId = uuidv4();
-    setUser(sessionId, user);
-    res.cookie('uid', sessionId);
+    const token = setUser(user);
+    console.log("Generated Token:", token);   // 👈 यह valid JWT होना चाहिए
+
+    res.cookie('uid',token);
 
     return res.redirect("/");
   } catch (err) {
